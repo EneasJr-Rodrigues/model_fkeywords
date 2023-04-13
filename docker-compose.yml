@@ -14,8 +14,8 @@ services:
       - config/$ENV/.env
     #  - .env
     ports:
-      - ${JUPYTER_PORT-8082}:${JUPYTER_PORT-8082}
-      - ${SPARK_UI_PORT-4042}:${SPARK_UI_PORT-4042}
+      - ${JUPYTER_PORT-8083}:${JUPYTER_PORT-8083}
+      - ${SPARK_UI_PORT-4043}:${SPARK_UI_PORT-4043}
     volumes:
       - .:/opt/dna/$SERVICE
       - .:/src # Used by pre-commit on pytest step
