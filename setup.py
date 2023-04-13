@@ -22,7 +22,7 @@ setup(
     license=open(os.path.join(PROJECT_DIR, 'LICENSE')).read(),
     packages=find_namespace_packages(include=['api_model','api_model.utils']),
     install_requires=[d for d in DEPENDENCIES if '://' not in d],
-    python_requires='==3.7.13',
+    python_requires='>=3.8',
     #TO-DO: Fix dependency links : not working with bdist_wheel
     dependency_links = ["git+https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.2.0/pt_core_news_sm-3.2.0.tar.gz"],
     tests_require=['pytest', 'parameterized'],
