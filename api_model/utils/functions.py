@@ -13,11 +13,11 @@ from pytz import timezone
 sao_paulo_timezone = timezone('America/Sao_Paulo')
 
 
-PATH_READ = '/content/'
-PATH_SAVE = '/content/drive/My Drive/'
+#PATH_READ = '/content/'
+#PATH_SAVE = '/content/drive/My Drive/'
 
-#PATH_READ = '/opt/dna/find-keywords/datalake/'
-#PATH_SAVE = '/opt/dna/find-keywords/datalake/'
+PATH_READ = '/opt/dna/model_fkeywords/datalake'
+PATH_SAVE = '/opt/dna/model_fkeywords/datalake'
 
 
 class TransforDatas(NLExtractor):
@@ -216,7 +216,7 @@ class TransforDatas(NLExtractor):
 
         else:
 
-            logger.info(f'read file {PATH_READ}{prefix}')
+            logger.info(f'read file {PATH_READ}/{prefix}')
             if prefix == 'xlsx':
                 df = pd.read_excel(f"{PATH_READ}/{filename}.{prefix}", engine='openpyxl')
                 logger.debug(f'Schema of dataframe is {df.info()}')

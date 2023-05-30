@@ -14,6 +14,10 @@ USER $root
 RUN python -m pip install --root --upgrade pip
 ADD requirements.txt .
 RUN pip install -r requirements.txt
+RUN pip install --upgrade numpy
+RUN pip install --upgrade wordcloud
+RUN pip install --upgrade Pillow
+RUN apt-get update
 #RUN apt-get install openjdk-11-jdk
 RUN pip install --upgrade setuptools
 RUN pip install jupyterlab

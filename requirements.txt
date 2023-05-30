@@ -8,19 +8,20 @@ django-rss-plugin==0.0.9
 seaborn==0.11.1
 
 ## Text
-nltk==3.6.5
-spacy==3.0.3
+nltk>=3.6.5
+spacy>=3.0.3
 # Datetime
-pendulum==2.0.5
+pendulum>=2.0.5
+numpy
 
 
 # APIs
-requests==2.26.0
+requests>=2.26.0
 pygments>=2.7.4 # not directly required, pinned by Snyk to avoid a vulnerability
-gensim>=4.0.0
+gensim
 
 pytest
-wordcloud>=1.8.1
+wordcloud
 kneebow
 regex
 cython
